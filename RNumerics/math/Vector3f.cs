@@ -222,6 +222,15 @@ namespace RNumerics
 			return v1.AngleR(v2);
 		}
 
+		public Vector3f Clamp(float min, float max) 
+		{
+			return new Vector3f(
+				Math.Min(Math.Max(x, min), max),
+				Math.Min(Math.Max(y, min), max),
+				Math.Min(Math.Max(z, min), max));
+		}
+			
+
 
 		public float DistanceSquared(Vector3f v2) {
 			float dx = v2.x - x, dy = v2.y - y, dz = v2.z - z;
