@@ -18,8 +18,9 @@ namespace RhuEngine
 			RLog.Info("Building Local World");
 			var floor = world.RootEntity.AddChild("Floor");
 			floor.position.Value = new Vector3f(0, 0, 0);
+			world.RootEntity.GlobalTrans
 
-			
+
 			//Todo: fix problem with RigidBody
 			//var rigbody = PowerCube.AttachComponent<RigidBody>();
 			//rigbody.PhysicsObject.Target = boxshape;
